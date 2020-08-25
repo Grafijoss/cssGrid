@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pinterest</title>
+	<style>
+		.container {
+			display: grid;
+			grid-gap: 5px;
+			grid-template-columns: repeat(auto-fill, 250px);
+			/*   grid-template-columns: repeat(3, 250px); */
+			justify-content: center;
+		}
+
+		.container__item {
+			background: #f2f2f2;
+			border-radius: 5px;
+			padding: 10px;
+		}
+
+		.container__figure {
+			margin: 0;
+		}
+
+		.container__img {
+			max-width: 100%;
+			/*   height: 100%; */
+			object-fit: cover;
+			vertical-align: top;
+		}
+
+		.level-1 {
+			grid-row-end: span 3;
+		}
+
+		.level-2 {
+			grid-row-end: span 2;
+		}
+
+		.level-3 {
+			grid-row-end: span 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="container__item level-1">
+			<figure class="container__figure">
+				<img src="http://placekitten.com/564/1292" alt="" class="container__img">
+			</figure>
+		</div>
+		<div class="container__item level-2">
+			<figure class="container__figure">
+				<img src="http://placekitten.com/564/859" alt="" class="container__img">
+			</figure>
+		</div>
+		<div class="container__item level-3">
+			<figure class="container__figure">
+				<img src="http://placekitten.com/564/564" alt="" class="container__img">
+			</figure>
+		</div>
+		<div class="container__item level-1">
+			<figure class="container__figure">
+				<img src="http://placekitten.com/564/1292" alt="" class="container__img">
+			</figure>
+		</div>
+		<div class="container__item level-2">
+			<figure class="container__figure">
+				<img src="http://placekitten.com/564/859" alt="" class="container__img">
+			</figure>
+		</div>
+		<div class="container__item level-3">
+			<figure class="container__figure">
+				<img src="http://placekitten.com/564/564" alt="" class="container__img">
+			</figure>
+		</div>
+		<div class="container__item level-1">
+			<figure class="container__figure">
+				<img src="http://placekitten.com/564/1292" alt="" class="container__img">
+			</figure>
+		</div>
+		<div class="container__item level-2">
+			<figure class="container__figure">
+				<img src="http://placekitten.com/564/859" alt="" class="container__img">
+			</figure>
+		</div>
+		<div class="container__item level-3">
+			<figure class="container__figure">
+				<img src="http://placekitten.com/564/564" alt="" class="container__img">
+			</figure>
+		</div>
+		<div class="container__item level-1">
+			<figure class="container__figure">
+				<img src="http://placekitten.com/564/1292" alt="" class="container__img">
+			</figure>
+		</div>
+		<div class="container__item level-2">
+			<figure class="container__figure">
+				<img src="http://placekitten.com/564/859" alt="" class="container__img">
+			</figure>
+		</div>
+		<div class="container__item level-3">
+			<figure class="container__figure">
+				<img src="http://placekitten.com/564/564" alt="" class="container__img">
+			</figure>
+		</div>
+	</div>
+</body>
+
+</html>

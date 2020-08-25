@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			font-family: Arial;
+			margin: 0;
+		}
+
+		.post-list {
+			display: grid;
+			grid-gap: 28px;
+			grid-template-columns: repeat(3, minmax(100px, 293px));
+			justify-content: center;
+		}
+
+		.post {
+			cursor: pointer;
+			display: block;
+			position: relative;
+		}
+
+		.post__image {
+			margin: 0;
+		}
+
+		.post__image img {
+			vertical-align: top;
+			width: 100%;
+		}
+
+		.post__overlay {
+			align-items: center;
+			background: rgba(0, 0, 0, .4);
+			bottom: 0;
+			color: white;
+			display: none;
+			left: 0;
+			position: absolute;
+			right: 0;
+			justify-content: center;
+			top: 0;
+		}
+
+		.post:hover .post__overlay {
+			display: flex;
+		}
+
+		.post__likes,
+		.post__comments {
+			display: inline-block;
+			font-weight: bold;
+			margin: 10px;
+			width: 40px;
+		}
+
+		@media screen and (max-width: 768px) {
+			.post-list {
+				grid-gap: 3px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<section class="post-list">
+		<a href="" class="post">
+			<figure class="post__image">
+				<img src="http://placekitten.com/500/500" alt="">
+			</figure>
+			<span class="post__overlay">
+				<p class="post__text">
+					<span class="post__likes">150</span>
+					<span class="post__comments">10</span>
+				</p>
+			</span>
+		</a>
+		<a href="" class="post">
+			<figure class="post__image">
+				<img src="http://placekitten.com/500/500" alt="">
+			</figure>
+			<span class="post__overlay">
+				<p class="post__text">
+					<span class="post__likes">150</span>
+					<span class="post__comments">10</span>
+				</p>
+			</span>
+		</a>
+		<a href="" class="post">
+			<figure class="post__image">
+				<img src="http://placekitten.com/500/500" alt="">
+			</figure>
+			<span class="post__overlay">
+				<p class="post__text">
+					<span class="post__likes">150</span>
+					<span class="post__comments">10</span>
+				</p>
+			</span>
+		</a>
+		<a href="" class="post">
+			<figure class="post__image">
+				<img src="http://placekitten.com/500/500" alt="">
+			</figure>
+			<span class="post__overlay">
+				<p class="post__text">
+					<span class="post__likes">150</span>
+					<span class="post__comments">10</span>
+				</p>
+			</span>
+		</a>
+		<a href="" class="post">
+			<figure class="post__image">
+				<img src="http://placekitten.com/500/500" alt="">
+			</figure>
+			<span class="post__overlay">
+				<p class="post__text">
+					<span class="post__likes">150</span>
+					<span class="post__comments">10</span>
+				</p>
+			</span>
+		</a>
+		<a href="" class="post">
+			<figure class="post__image">
+				<img src="http://placekitten.com/500/500" alt="">
+			</figure>
+			<span class="post__overlay">
+				<p class="post__text">
+					<span class="post__likes">150</span>
+					<span class="post__comments">10</span>
+				</p>
+			</span>
+		</a>
+		<a href="" class="post">
+			<figure class="post__image">
+				<img src="http://placekitten.com/500/500" alt="">
+			</figure>
+			<span class="post__overlay">
+				<p class="post__text">
+					<span class="post__likes">150</span>
+					<span class="post__comments">10</span>
+				</p>
+			</span>
+		</a>
+		<a href="" class="post">
+			<figure class="post__image">
+				<img src="http://placekitten.com/500/500" alt="">
+			</figure>
+			<span class="post__overlay">
+				<p class="post__text">
+					<span class="post__likes">150</span>
+					<span class="post__comments">10</span>
+				</p>
+			</span>
+		</a>
+		<a href="" class="post">
+			<figure class="post__image">
+				<img src="http://placekitten.com/500/500" alt="">
+			</figure>
+			<span class="post__overlay">
+				<p class="post__text">
+					<span class="post__likes">150</span>
+					<span class="post__comments">10</span>
+				</p>
+			</span>
+		</a>
+	</section>
+</body>
+
+</html>
