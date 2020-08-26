@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			font-family: Roboto, Arial;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.hero {
+			background: #23475b;
+			color: white;
+			display: grid;
+			padding: 32px 15px;
+		}
+
+		.hero__container {}
+
+		.hero__badge {}
+
+		.hero__badge img {
+			width: 70px;
+		}
+
+		.hero__title {
+			align-items: center;
+			display: flex;
+			font-size: 36px;
+			font-weight: normal;
+			margin: 0;
+		}
+
+		.hero__description {}
+
+		.hero__form {
+			background: rgba(255, 255, 255, .9);
+			border-radius: 5px;
+			grid-area: form;
+			padding: 1.5em;
+			text-align: center;
+		}
+
+		.form__input {
+			border: 1px solid #dbdbe2;
+			border-radius: 5px;
+			box-sizing: border-box;
+			font-size: 16px;
+			margin-bottom: 10px;
+			padding: 10px;
+			width: 100%;
+		}
+
+		.form__text {
+			font-size: 20px;
+			color: #3a3b3f;
+			margin-bottom: 1em;
+		}
+
+		.form__button {
+			background: #98ca3f;
+			border-radius: 5px;
+			border: none;
+			border-bottom: 5px solid #6d932b;
+			display: inline-bloc;
+			color: white;
+			font-size: 16px;
+			padding: 10px 15px;
+		}
+
+		.hero__countdown {}
+
+		.hero__countdown p {
+			font-size: 20px;
+			font-weight: 200;
+			text-align: center;
+		}
+
+		.hero__countdown span {
+			font-size: 33px;
+		}
+
+		.hero__countdown span:after {
+			content: ":";
+			display: inline-block;
+			margin: 0 5px;
+		}
+
+		.hero__countdown span:last-child:after {
+			display: none;
+		}
+
+		@media screen and (max-width: 768px) {
+			.hero__container {}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="hero">
+		<div class="hero__container">
+			<div class="hero__badge">
+				<img
+					src="https://static.platzi.com/media/achievements/badge-react-2018-afc93257-48af-4e54-acaa-4d0433380f64.png"
+					alt="" class="hero__img-logo">
+			</div>
+			<h1 class="hero__title">
+				Curso de React.js
+			</h1>
+			<div class="hero__description">
+				<p>
+					React es una de las librerias más utilizadas hoy en día aqui podras dominar la creación de las aplicaciones a
+					través de un proyecto que te ayudara a explotar todas las capacidades de esta librería
+				</p>
+			</div>
+
+			<form action="" class="hero__form form">
+				<p class="form__text">
+					Regístrate a platzi
+				</p>
+				<input class="form__input" type="text" placeholder="Nombre">
+				<input class="form__input" type="email" placeholder="Correo electrónico">
+				<button class="form__button" type="submit">Comienza ahora</button>
+			</form>
+			<div class="hero__countdown">
+				<p class="">
+					Lanzamiento:
+				</p>
+				<p>
+					<span>01d</span>
+					<span>03h</span>
+					<span>0dm</span>
+					<span>01s</span>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
